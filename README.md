@@ -1,3 +1,3 @@
 # cocotaku-hub
 Web Development
-Live site: https://YOUR-USERNAME.github.io/cruz_juan/
+Live site:  https://jangel-laureta-compro.github.io/cocotaku-hub/
