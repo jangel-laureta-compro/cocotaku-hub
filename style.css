@@ -7,7 +7,7 @@
 }
 
 /* ===== 2. Base Styles ===== */
-* {S
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -109,120 +109,11 @@ footer a {
 
 /* ===== 4. Components ===== */
 
-/* Product cards */
-article {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  color: var(--muted-grey);
-}
-
-article h3 {
-  color: var(--ink-color);
-}
-
-article img {
-  border-radius: 8px;
-  margin: 0.75rem 0;
-  max-width: 100%;
-  height: auto;
-}
-
-article a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  background-color: var(--brand-color);
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-size: 0.9rem;
-}
-
-article a:hover {
-  background-color: #b8380c;
-  text-decoration: none;
-}
-
-/* Tables (product spec sheets) */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.5rem 0;
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-th, td {
-  padding: 0.75rem 1rem;
-  text-align: left;
-  border-bottom: 1px solid #eee;
-}
-
-th {
-  background-color: var(--ink-color);
-  color: #fff;
-}
-
-/* Forms */
-form {
-  margin-top: 1.5rem;
-}
-
-fieldset {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-legend {
-  font-weight: bold;
-  color: var(--ink-color);
-  padding: 0 0.5rem;
-}
-
-label {
-  display: block;
-  margin-top: 0.75rem;
-  margin-bottom: 0.25rem;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select,
-textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-family: inherit;
-  font-size: 1rem;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  margin-right: 0.5rem;
-}
-
-button[type="submit"] {
-  margin-top: 1rem;
-  background-color: var(--brand-color);
-  color: #fff;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #b8380c;
+/* Product grid — responsive layout */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 /* Product cards */
@@ -233,6 +124,7 @@ button[type="submit"]:hover {
   margin-bottom: 1.5rem;
   border-left: 5px solid var(--brand-color);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex: 1 1 240px;
 }
 
 .product-card h3 {
@@ -262,7 +154,29 @@ button[type="submit"]:hover {
   text-decoration: none;
 }
 
-/* Form styling */
+/* Tables (product spec sheets) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: var(--ink-color);
+  color: #fff;
+}
+
+/* Forms */
 form {
   margin-top: 1.5rem;
 }
