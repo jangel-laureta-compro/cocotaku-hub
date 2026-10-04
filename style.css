@@ -40,6 +40,11 @@ a:hover {
   text-decoration: underline;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ===== 3. Layout Regions ===== */
 
 /* Header — flexbox layout */
@@ -135,8 +140,6 @@ footer a {
 .product-card img {
   border-radius: 8px;
   margin: 0.75rem 0;
-  max-width: 100%;
-  height: auto;
 }
 
 .product-card a {
@@ -261,14 +264,17 @@ button:focus {
   text-align: center;
 }
 
-/* ===== Page Grid Layout ===== */
+/* ===== Page Grid Layout — Mobile First ===== */
+
+/* Base: mobile — single column, everything stacked */
 .page {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "masthead masthead"
-    "side     main"
-    "foot     foot";
+    "masthead"
+    "main"
+    "side"
+    "foot";
   gap: 16px;
 }
 
@@ -276,6 +282,17 @@ button:focus {
 .page aside  { grid-area: side; }
 .page main   { grid-area: main; }
 .page footer { grid-area: foot; }
+
+/* Enhance at tablet and up */
+@media (min-width: 700px) {
+  .page {
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "masthead masthead"
+      "side     main"
+      "foot     foot";
+  }
+}
 
 /* Sidebar styling */
 aside {
