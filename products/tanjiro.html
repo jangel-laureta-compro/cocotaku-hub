@@ -7,95 +7,103 @@
 </head>
 <body>
 
- <header class="site-header">
-  <div class="site-brand">
-    <h1>Cocotaku Hub</h1>
+  <div class="page">
+
+    <header class="site-header">
+      <div class="site-brand">
+        <h1>Cocotaku Hub</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside>
+      <h2>Shop Categories</h2>
+      <ul>
+        <li>Anime Figures</li>
+        <li>PS5 Games</li>
+        <li>Limited Editions</li>
+      </ul>
+    </aside>
+
+    <main>
+      <section>
+        <div class="detail-hero">
+          <h1>Demon Slayer: Tanjiro Kamado Figure</h1>
+        </div>
+        <img src="../tanjiro.jpg" alt="Demon Slayer Tanjiro Kamado Figure, full view" style="width: 400px; height: auto;">
+
+        <p>This 20cm PVC scale figure captures Tanjiro Kamado in his iconic Demon Slayer uniform, complete with his signature haori pattern and Nichirin blade. Perfect for display on a shelf or desk, this piece is a must-have for any Demon Slayer collector. Official releases (Banpresto/Bandai) feature finer paint detail and sturdier joints compared to bootleg/scale versions, which is reflected in the price difference.</p>
+
+        <table>
+          <tr>
+            <th>Specification</th>
+            <th>Details</th>
+          </tr>
+          <tr>
+            <td>Material</td>
+            <td>PVC</td>
+          </tr>
+          <tr>
+            <td>Height</td>
+            <td>20cm</td>
+          </tr>
+          <tr>
+            <td>Color</td>
+            <td>Green/Black haori, standard figure paint</td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td>₱2,500 – ₱4,500</td>
+          </tr>
+        </table>
+
+        <form>
+          <fieldset>
+            <legend>Order Enquiry</legend>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+
+            <fieldset>
+              <legend>Delivery method</legend>
+              <input type="radio" id="delivery-pickup" name="delivery" value="pickup">
+              <label for="delivery-pickup">Meetup / Pickup</label>
+              <input type="radio" id="delivery-standard" name="delivery" value="standard">
+              <label for="delivery-standard">Standard Shipping</label>
+              <input type="radio" id="delivery-express" name="delivery" value="express">
+              <label for="delivery-express">Express Shipping</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Optional extras</legend>
+              <input type="checkbox" id="extra-giftwrap" name="extras" value="giftwrap">
+              <label for="extra-giftwrap">Gift wrapping</label>
+              <input type="checkbox" id="extra-express-handling" name="extras" value="express-handling">
+              <label for="extra-express-handling">Express handling</label>
+              <input type="checkbox" id="extra-insurance" name="extras" value="insurance">
+              <label for="extra-insurance">Shipping insurance</label>
+            </fieldset>
+
+            <label for="email">Contact email</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Send enquiry</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="https://jangel-laureta-compro.github.io/laureta_johnangel/">Back to Main Site</a></p>
+    </footer>
+
   </div>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../about.html">About</a></li>
-      <li><a href="../contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-  <main>
-    <section>
-      <div class="detail-hero">
-  <h1>Demon Slayer: Tanjiro Kamado Figure</h1>
-  </div>
-      <img src="../tanjiro.jpg" alt="Demon Slayer Tanjiro Kamado Figure, full view" style="width: 400px; height: auto;">
-
-      <p>This 20cm PVC scale figure captures Tanjiro Kamado in his iconic Demon Slayer uniform, complete with his signature haori pattern and Nichirin blade. Perfect for display on a shelf or desk, this piece is a must-have for any Demon Slayer collector. Official releases (Banpresto/Bandai) feature finer paint detail and sturdier joints compared to bootleg/scale versions, which is reflected in the price difference.</p>
-
-      <table>
-        <tr>
-          <th>Specification</th>
-          <th>Details</th>
-        </tr>
-        <tr>
-          <td>Material</td>
-          <td>PVC</td>
-        </tr>
-        <tr>
-          <td>Height</td>
-          <td>20cm</td>
-        </tr>
-        <tr>
-          <td>Color</td>
-          <td>Green/Black haori, standard figure paint</td>
-        </tr>
-        <tr>
-          <td>Price</td>
-          <td>₱2,500 – ₱4,500</td>
-        </tr>
-      </table>
-      <form>
-  <fieldset>
-    <legend>Order Enquiry</legend>
-
-    <label for="quantity">Quantity</label>
-    <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
-
-    <fieldset>
-      <legend>Delivery method</legend>
-
-      <input type="radio" id="delivery-pickup" name="delivery" value="pickup">
-      <label for="delivery-pickup">Meetup / Pickup</label>
-
-      <input type="radio" id="delivery-standard" name="delivery" value="standard">
-      <label for="delivery-standard">Standard Shipping</label>
-
-      <input type="radio" id="delivery-express" name="delivery" value="express">
-      <label for="delivery-express">Express Shipping</label>
-    </fieldset>
-
-    <fieldset>
-      <legend>Optional extras</legend>
-
-      <input type="checkbox" id="extra-giftwrap" name="extras" value="giftwrap">
-      <label for="extra-giftwrap">Gift wrapping</label>
-
-      <input type="checkbox" id="extra-express-handling" name="extras" value="express-handling">
-      <label for="extra-express-handling">Express handling</label>
-
-      <input type="checkbox" id="extra-insurance" name="extras" value="insurance">
-      <label for="extra-insurance">Shipping insurance</label>
-    </fieldset>
-
-    <label for="email">Contact email</label>
-    <input type="email" id="email" name="email" required>
-
-    <button type="submit">Send enquiry</button>
-  </fieldset>
-</form>
-    </section>
-  </main>
-
-  <footer>
-    <p><a href="https://jangel-laureta-compro.github.io/laureta_johnangel/">Back to Main Site</a></p>
-  </footer>
 
 </body>
 </html>
