@@ -42,40 +42,38 @@ a:hover {
 
 /* ===== 3. Layout Regions ===== */
 
-/* Header */
-header {
+/* Header — flexbox layout */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--ink-color);
   color: #fff;
-  padding: 2rem 1.5rem 1.5rem;
-  text-align: center;
+  padding: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-header h1 {
+.site-brand h1 {
   color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 0;
 }
 
-header p {
+.site-brand p {
   color: #d1d5db;
-  max-width: 600px;
-  margin: 0 auto 1rem;
+  margin-bottom: 0;
 }
 
-/* Nav */
-nav ul {
+.site-header nav ul {
+  display: flex;
+  gap: 20px;
   list-style: none;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
+  margin: 0;
 }
 
-nav li {
-  display: inline-block;
-}
-
-nav a {
+.site-header nav a {
   color: #fff;
   font-weight: bold;
   padding: 0.4rem 0.9rem;
@@ -84,9 +82,8 @@ nav a {
   transition: background-color 0.2s ease;
 }
 
-nav a:hover {
+.site-header nav a:hover {
   background-color: var(--brand-color);
-  text-decoration: none;
 }
 
 /* Main */
@@ -332,4 +329,20 @@ select:focus,
 button:focus {
   outline: 3px solid var(--brand-color);
   outline-offset: 2px;
+}
+
+/* Centred hero banner on product detail pages */
+.detail-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: var(--light-bg);
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.detail-hero h1 {
+  margin: 0;
+  text-align: center;
 }
